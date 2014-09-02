@@ -4,4 +4,4 @@ from app import app
 
 @app.route('/')
 def index():
-    return request.headers.environ['HTTP_X_REAL_IP']
+    return request.headers.environ['HTTP_X_REAL_IP'] + '\n'

@@ -1,4 +1,5 @@
-ip
+Ip
 ==
 
-Tells your ip address on the webpage. Curl friendly.
+Tells you your ip address. Curl friendly. 
+http://ip.zah.fi/

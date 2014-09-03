@@ -1,7 +1,8 @@
-from flask import request
+from flask import request, Response
 
 from app import app
 
 @app.route('/')
 def index():
-    return request.headers.environ['HTTP_X_REAL_IP'] + '\n'
+    resp = request.headers.environ['HTTP_X_REAL_IP'] + '\n'
+    return Response(resp, mimetype='text/plain')
